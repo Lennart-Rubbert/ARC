@@ -8,6 +8,7 @@
     @font-face {
       font-family: 'Avenir';
       src: local('Avenir'), local('Helvetica Neue'), local('Arial'), sans-serif;
+      /* fallback */
     }
     :root {
       --blue: rgb(65, 128, 255);
@@ -26,7 +27,7 @@
     header {
       background-color: var(--white);
       padding: 1.5rem 2rem;
-      border-bottom: 2px solid var(--gray);
+      border-bottom: 2px solid var(--gray); /* trait gris */
       display: flex;
       align-items: center;
       gap: 1.2rem;
@@ -40,7 +41,7 @@
       margin: 0;
       font-weight: 700;
       font-size: 2.5rem;
-      color: var(--black);
+      color: var(--black); /* texte principal en noir */
       flex-grow: 1;
     }
     nav {
@@ -48,11 +49,11 @@
       display: flex;
       gap: 2rem;
       font-weight: 600;
-      color: var(--gray);
+      color: var(--gray); /* nav gris */
       font-size: 0.9rem;
     }
     nav a {
-      color: var(--gray);
+      color: var(--gray); /* nav gris */
       text-decoration: none;
       text-transform: uppercase;
       transition: color 0.3s ease;
@@ -70,7 +71,7 @@
       margin-bottom: 3rem;
     }
     h2 {
-      color: var(--black);
+      color: var(--black); /* titres noirs */
       border-bottom: 2px solid var(--blue);
       padding-bottom: 0.25rem;
       margin-bottom: 1rem;
@@ -79,8 +80,13 @@
     }
     p {
       font-size: 1.1rem;
-      color: var(--black);
+      color: var(--black); /* paragraphes noirs */
       margin-top: 0;
+    }
+    ul {
+      color: var(--black); /* listes en noir */
+      font-size: 1.1rem;
+      margin-left: 1.2rem;
     }
     .btn {
       display: inline-block;
@@ -101,25 +107,20 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      color: var(--gray);
+      color: var(--gray); /* footer gris */
       border-top: 1px solid var(--gray);
       font-family: 'Avenir', sans-serif;
     }
     .hashtags {
       font-size: 0.9rem;
-      color: var(--gray);
+      color: var(--gray); /* hashtags gris */
       margin-top: 0.5rem;
       white-space: pre-wrap;
       font-family: monospace;
     }
     .partner-network {
       font-style: italic;
-      color: var(--gray);
-    }
-    ul {
-      color: var(--black);
-      font-size: 1.1rem;
-      margin-left: 1.2rem;
+      color: var(--gray); /* gris */
     }
   </style>
 </head>
