@@ -8,7 +8,6 @@
     @font-face {
       font-family: 'Avenir';
       src: local('Avenir'), local('Helvetica Neue'), local('Arial'), sans-serif;
-      /* Avenir n’est pas une police web libre, on propose une fallback proche */
     }
     :root {
       --blue: rgb(65, 128, 255);
@@ -27,21 +26,21 @@
     header {
       background-color: var(--white);
       padding: 1.5rem 2rem;
-      border-bottom: 2px solid var(--blue);
+      border-bottom: 2px solid var(--gray);
       display: flex;
       align-items: center;
       gap: 1.2rem;
     }
     header img.logo {
-      height: 3.5rem; /* approximativement hauteur titre */
+      height: 3.5rem;
       width: auto;
       object-fit: contain;
     }
     header h1 {
       margin: 0;
       font-weight: 700;
-      font-size: 1.5rem;
-      color: var(--gray);
+      font-size: 2.5rem;
+      color: var(--black);
       flex-grow: 1;
     }
     nav {
@@ -71,7 +70,7 @@
       margin-bottom: 3rem;
     }
     h2 {
-      color: var(--blue);
+      color: var(--black);
       border-bottom: 2px solid var(--blue);
       padding-bottom: 0.25rem;
       margin-bottom: 1rem;
@@ -118,7 +117,7 @@
       color: var(--gray);
     }
     ul {
-      color: var(--gray);
+      color: var(--black);
       font-size: 1.1rem;
       margin-left: 1.2rem;
     }
@@ -128,7 +127,7 @@
 
 <header>
   <img src="logo_arc.svg" alt="ARC Logo" class="logo" />
-  <h1>Enhance your medical gesture</h1>
+  <h1>ARC Needle Project</h1>
   <nav>
     <a href="#innovation">The Innovation</a>
     <a href="#story">The Story</a>
