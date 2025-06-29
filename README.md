@@ -4,7 +4,7 @@ This repository contains the source code of my personal website / project site, 
 
 ## 🔗 Live site
 
-👉 [https://Lennart-Rubbert.github.io/ARC](https://Lennart-Rubbert.github.io/ARC)(https://Lennart-Rubbert.github.io/ARC)
+👉 https://github.com/Lennart-Rubbert/ARC/
 
 ## 📄 License
 
