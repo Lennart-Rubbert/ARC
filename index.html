@@ -5,41 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ARC Needle Project</title>
   <style>
+    @font-face {
+      font-family: 'Avenir';
+      src: local('Avenir'), local('Helvetica Neue'), local('Arial'), sans-serif;
+      /* Avenir n’est pas une police web libre, on propose une fallback proche */
+    }
     :root {
-      --blue: #1e3a8a;
-      --gray: #6b7280;
+      --blue: rgb(65, 128, 255);
+      --gray: rgb(145, 145, 145);
+      --black: #000000;
       --white: #ffffff;
       --bg: var(--white);
     }
     body {
       margin: 0; padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Avenir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: var(--bg);
-      color: var(--blue);
+      color: var(--black);
       line-height: 1.6;
     }
     header {
       background-color: var(--white);
-      padding: 2rem 1rem;
+      padding: 1.5rem 2rem;
       border-bottom: 2px solid var(--blue);
-      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+    header img.logo {
+      height: 3.5rem; /* approximativement hauteur titre */
+      width: auto;
+      object-fit: contain;
     }
     header h1 {
-      margin: 0; font-weight: 700; font-size: 2.5rem;
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: var(--black);
+      flex-grow: 1;
     }
     nav {
-      margin-top: 1rem;
+      margin-left: auto;
       display: flex;
-      justify-content: center;
       gap: 2rem;
       font-weight: 600;
       color: var(--gray);
+      font-size: 0.9rem;
     }
     nav a {
       color: var(--gray);
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 0.9rem;
+      transition: color 0.3s ease;
     }
     nav a:hover {
       color: var(--blue);
@@ -59,6 +76,7 @@
       padding-bottom: 0.25rem;
       margin-bottom: 1rem;
       font-weight: 700;
+      font-family: 'Avenir', sans-serif;
     }
     p {
       font-size: 1.1rem;
@@ -75,9 +93,10 @@
       text-decoration: none;
       border-radius: 4px;
       transition: background-color 0.3s ease;
+      font-family: 'Avenir', sans-serif;
     }
     .btn:hover {
-      background-color: #163265;
+      background-color: rgb(40, 85, 175);
     }
     footer {
       text-align: center;
@@ -85,6 +104,7 @@
       font-size: 0.9rem;
       color: var(--gray);
       border-top: 1px solid var(--gray);
+      font-family: 'Avenir', sans-serif;
     }
     .hashtags {
       font-size: 0.9rem;
@@ -97,11 +117,17 @@
       font-style: italic;
       color: var(--gray);
     }
+    ul {
+      color: var(--gray);
+      font-size: 1.1rem;
+      margin-left: 1.2rem;
+    }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="arc-logo.png" alt="ARC Logo" class="logo" />
   <h1>ARC Needle Project</h1>
   <nav>
     <a href="#innovation">The Innovation</a>
