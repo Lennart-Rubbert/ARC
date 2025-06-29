@@ -2,72 +2,157 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARC Project – Enhance your medical gesture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARC Needle Project</title>
   <style>
+    :root {
+      --blue: #1e3a8a;
+      --gray: #6b7280;
+      --white: #ffffff;
+      --bg: var(--white);
+    }
     body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 2em;
-      background: #f8f9fa;
-      color: #333;
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--blue);
+      line-height: 1.6;
     }
     header {
-      background: #002b36;
-      color: white;
-      padding: 1em;
-      border-radius: 8px;
+      background-color: var(--white);
+      padding: 2rem 1rem;
+      border-bottom: 2px solid var(--blue);
+      text-align: center;
     }
-    h1 {
-      margin-top: 0;
+    header h1 {
+      margin: 0; font-weight: 700; font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-weight: 600;
+      color: var(--gray);
+    }
+    nav a {
+      color: var(--gray);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      color: var(--blue);
+      text-decoration: underline;
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
     section {
-      margin-top: 2em;
+      margin-bottom: 3rem;
     }
-    .partners, .funding {
-      font-style: italic;
-      color: #555;
+    h2 {
+      color: var(--blue);
+      border-bottom: 2px solid var(--blue);
+      padding-bottom: 0.25rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.1rem;
+      color: var(--gray);
+      margin-top: 0;
+    }
+    .btn {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.6rem 1.4rem;
+      background-color: var(--blue);
+      color: var(--white);
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #163265;
     }
     footer {
-      margin-top: 3em;
-      border-top: 1px solid #ccc;
-      padding-top: 1em;
-      font-size: 0.9em;
-      color: #777;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: var(--gray);
+      border-top: 1px solid var(--gray);
+    }
+    .hashtags {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-top: 0.5rem;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+    .partner-network {
+      font-style: italic;
+      color: var(--gray);
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>ARC Project</h1>
+
+<header>
+  <h1>ARC Needle Project</h1>
+  <nav>
+    <a href="#innovation">The Innovation</a>
+    <a href="#story">The Story</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</header>
+
+<main>
+  <section id="home">
+    <h2>Discover ARC</h2>
+    <p>The innovative passive steerable needle for accurate multimodal image-guided percutaneous interventions with its stiffness controlled at your fingertip.</p>
+    <a href="#contact" class="btn">Discover</a>
+  </section>
+
+  <section id="enhance">
     <h2>Enhance your medical gesture</h2>
-  </header>
-
-  <section>
-    <h3>About the Project</h3>
-    <p>
-      The ARC project 
-    </p>
+    <a href="#contact" class="btn">Ask for the demonstration kit!</a>
+    <ul>
+      <li>Trajectory correction</li>
+      <li>Obstacle avoidance</li>
+      <li>Multiple targets per insertion</li>
+    </ul>
   </section>
 
-  <section>
-    <h3>Partners</h3>
-    <p class="partners">
-      ICube (Université de Strasbourg), ..
-    </p>
+  <section id="innovation" class="hashtags">
+    <p>#passive #flexible #combinatory #multitargeting #innovation #healthcare<br>
+    #medical #medtech #minimally-invasive #multimodal-imaging #interventional #radiology #endoscopy</p>
   </section>
 
-  <section>
-    <h3>Funding</h3>
-    <p class="funding">
-      This project is 
-    </p>
+  <section id="origin">
+    <h2>From public lab to market</h2>
+    <p>This innovation has been developed in Alsace territory, at the heart of the French-German-Swiss “golden research area”.</p>
+    <p class="partner-network">A scientific international expertise<br>A strong network of partners</p>
   </section>
 
-  <footer>
-    © 2025 – ARC Project Team. All rights reserved.  
-    <br />
-    For image licensing, see <a href="LICENSE-images.md">LICENSE-images.md</a>.
-  </footer>
+  <section id="story">
+    <h2>About the story</h2>
+    <p>What about you?</p>
+    <p><strong>We are looking for INDUSTRIAL PARTNER</strong></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact us</h2>
+    <p>This innovation is boosted by SATT CONECTUS.</p>
+  </section>
+</main>
+
+<footer>
+  © SATT CONECTUS. All rights reserved. - Legal mentions - Privacy policy
+</footer>
+
 </body>
 </html>
