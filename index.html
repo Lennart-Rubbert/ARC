@@ -5,12 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ARC medical</title>
+
+  <!-- Police Inter via Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
   <style>
-    @font-face {
-      font-family: 'Avenir';
-      src: local('Avenir'), local('Helvetica Neue'), local('Arial'), sans-serif;
-      /* Avenir n’est pas une police web libre, on propose une fallback proche */
-    }
     :root {
       --blue: rgb(65, 128, 255);
       --gray: rgb(145, 145, 145);
@@ -20,7 +19,7 @@
     }
     body {
       margin: 0; padding: 0;
-      font-family: 'Avenir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: var(--bg);
       color: var(--black);
       line-height: 1.6;
@@ -77,7 +76,7 @@
       padding-bottom: 0.25rem;
       margin-bottom: 1rem;
       font-weight: 700;
-      font-family: 'Avenir', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
     p {
       font-size: 1.1rem;
@@ -94,7 +93,7 @@
       text-decoration: none;
       border-radius: 4px;
       transition: background-color 0.3s ease;
-      font-family: 'Avenir', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
     .btn:hover {
       background-color: rgb(40, 85, 175);
@@ -105,7 +104,7 @@
       font-size: 0.9rem;
       color: var(--gray);
       border-top: 1px solid var(--gray);
-      font-family: 'Avenir', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
     .hashtags {
       font-size: 0.9rem;
@@ -123,27 +122,28 @@
       font-size: 1.1rem;
       margin-left: 1.2rem;
     }
+
     @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-  header h1 {
-    font-size: 2rem;
-  }
+      header h1 {
+        font-size: 2rem;
+      }
 
-  nav {
-    margin-left: 0;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
+      nav {
+        margin-left: 0;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
 
-  main {
-    padding: 0 1rem;
-  }
-}
+      main {
+        padding: 0 1rem;
+      }
+    }
   </style>
 </head>
 <body>
